@@ -1,0 +1,59 @@
+@import "../../assets/style/variables.scss";
+
+.sidebar{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    :is(&__container, &__main) {
+        border-radius: 1rem;
+    }
+    
+    &__container {
+        background-color: $dark-secondary-color;
+        padding-bottom: 1rem;
+    }
+
+    &__main {
+        background-color: $primary-color;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: white;
+        font-weight: 300;
+        margin: 0;
+
+        &__label {
+            margin-top: 2rem;
+            font-size: 12px;
+        }
+
+        &__user {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__image {
+        width: 4rem;
+        height: 4rem;
+        border: 0.2rem solid white;
+        border-radius: 2.5rem;
+    }
+
+
+    &__menu {
+        //  background-color: $dark-secondary-color;
+         color: $primary_color;
+         padding: .5rem 2rem;
+
+         &:hover {
+             color: white;
+             cursor: pointer;
+         }
+    }
+}
+    

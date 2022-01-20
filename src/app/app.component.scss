@@ -1,0 +1,12 @@
+@import "../assets/style/variables.scss";
+
+.app {
+    &__container {
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        height: 100vh;
+        background-color: $darkest-secondary-color;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
