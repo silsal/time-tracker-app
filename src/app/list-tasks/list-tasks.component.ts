@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { userData } from 'src/assets/data/data';
 
 @Component({
   selector: 'app-list-tasks',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-tasks.component.scss']
 })
 export class ListTasksComponent implements OnInit {
+
+  userDetails = userData;
 
   constructor() { }
 

@@ -1,0 +1,63 @@
+@import "../../assets/style/variables.scss";
+
+.task {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-color: $work-color;
+        // align-items: flex-end;
+    }
+
+    &__icon {
+        width: 4rem;
+        margin-left: auto;
+        margin-top: -rem;
+        padding-right: .8rem;
+    }
+
+    &__type {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__hours {
+        // font-weight: 400;
+        font-size: 42px;
+        margin: .8rem 0;
+    }
+
+    &__period {
+        font-size: 12px;
+        color: $pale-secondary-color;
+    }
+
+    :is(&__container, &__details) {
+        border-radius: .8rem;
+    }
+
+    &__details {
+        // margin-top: 2rem;
+        background-color: $dark-secondary-color;
+        color: white;
+        padding: 1rem;
+        // width: 100%;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__icon {
+            padding: 1rem;
+            height: .2rem;
+        }
+    }
+}
