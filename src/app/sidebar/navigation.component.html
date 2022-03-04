@@ -6,7 +6,12 @@
             <h1 class="sidebar__text">Jeremy</h1>
             <h1 class="sidebar__text sidebar__text__user">Robson</h1>
         </div>
-        <div class="sidebar__menu"  *ngFor="let field of menuFields">
+        <div 
+            class="sidebar__menu" 
+            *ngFor="let field of menuFields"
+            routerLink="/report"
+            [queryParams]="{ period: field |lowercase}"
+        >
             {{field}}
         </div>
     </div>

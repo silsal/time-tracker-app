@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './sidebar/navigation.component';
 import { ListTasksComponent } from './list-tasks/list-tasks.component';
 import { TaskComponent } from './task/task.component';
+import { ReportComponent } from './report/report.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     ListTasksComponent,
-    TaskComponent
+    TaskComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
