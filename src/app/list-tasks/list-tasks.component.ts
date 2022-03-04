@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { userData } from 'src/assets/data/data';
 
 @Component({
@@ -9,10 +10,21 @@ import { userData } from 'src/assets/data/data';
 export class ListTasksComponent implements OnInit {
 
   userDetails = userData;
+  recordToView = 'daily';
+  detailsToView: any = [];
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.queryParams.subscribe(
+      param => {
+        this.recordToView = param['period'];
+        console.log(this.recordToView);
+        
+      }
+    );
   }
 
 }
