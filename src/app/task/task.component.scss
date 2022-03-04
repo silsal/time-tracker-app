@@ -16,9 +16,13 @@
     }
 
     &__icon {
+        &__container {
+            margin-left: auto;
+            height: 2.2rem;
+            overflow: hidden;
+        }
         width: 4rem;
-        margin-left: auto;
-        margin-top: -rem;
+        margin-top: -0.8rem;
         padding-right: .8rem;
     }
 
