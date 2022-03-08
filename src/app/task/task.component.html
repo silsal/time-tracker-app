@@ -1,15 +1,16 @@
 <div class="task">
-    <div class="task__container">
+    <div class="task__container" *ngFor="let detail of userDetails">
         <div class="task__icon__container">
+            
             <img class="task__icon" src="../../assets/images/icon-work.svg">
         </div>
         <div class="task__details">
             <div class="task__header">
-                <p class="task__type">Work</p>
+                <p class="task__type">{{detail.activity}}</p>
                 <img class="task__header__icon" src="../../assets/images/icon-ellipsis.svg">
             </div>
-            <p class="task__hours">32hrs</p>
-            <p class="task__period">Last week - 36hrs</p>
+            <p class="task__hours">{{detail.hours.current}} hrs</p>
+            <p class="task__period">Last week - {{detail.hours.previous}}hrs</p>
         </div>
     </div>
 </div>

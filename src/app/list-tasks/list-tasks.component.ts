@@ -21,8 +21,10 @@ export class ListTasksComponent implements OnInit {
     this.activatedRoute.queryParams.subscribe(
       param => {
         this.recordToView = param['period'];
-        console.log(this.recordToView);
-        
+        this.detailsToView = this.userDetails.map(detail => {
+          return {activity: detail.title, hours: detail.timeframes[`${this.recordToView}`]}
+        });
+        // console.log(this.detailsToView);
       }
     );
   }

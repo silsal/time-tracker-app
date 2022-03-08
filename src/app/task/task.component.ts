@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
+  @Input() userDetails: [{activity: string, hours: {current: number, previous: number}}];
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('--->', this.userDetails);
   }
 
 }
