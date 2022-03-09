@@ -1,14 +1,32 @@
 @import "../../assets/style/variables.scss";
 
 .report {
-    &__container {
-        display:flex;
-        // grid-template-columns: 1fr 4fr;
-        // grid-template-rows: 1fr 4fr 1fr;
-        column-gap: 1.5rem;
+    &__wrapper {
         height: 100vh;
         background-color: $darkest-secondary-color;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    &__container {
+        display:flex;
+        width: 60rem;
+        
+    }
+
+    &__list{
+        &__tasks {
+            width: 100%;
+            height: fit-content;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        &__nav {
+            width: 30%;
+        }
+
     }
 }

@@ -1,8 +1,11 @@
-.list-tasks{
-    &__container {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 100%;
-    }
+.list-tasks {
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-left: 1.5rem;
+    height: 100%;
+  }
 }

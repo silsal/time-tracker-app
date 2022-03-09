@@ -1,3 +1,5 @@
 <div class="list-tasks__container">
-    <app-task [userDetails]="detailsToView"></app-task>
+    <ng-container *ngFor="let details of detailsToView">
+        <app-task [userDetails]="details"></app-task>
+    </ng-container>
 </div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  @Input() userDetails: [{activity: string, hours: {current: number, previous: number}}];
+  @Input() userDetails: {activity: string, hours: {current: number, previous: number}};
 
   constructor() { }
 
